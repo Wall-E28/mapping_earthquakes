@@ -49,7 +49,7 @@ d3.json(eqData).then(function(data) {
   L.geoJson(data, {
     style: myStyle,
     onEachFeature: function(feature,layer) {
-        layer.bindPopup("<h2> Earthquake Magnitude: " + feature.properties.mag + "</h2> <hr> <h3> Location :" + feature.properties.place + "</h3>");
+        layer.bindPopup("<h2> Earthquake Magnitude: " + feature.properties.mag + "</h2> <hr> <h3> Location: " + feature.properties.place + "</h3>");
     }
   }).addTo(map);
 });
